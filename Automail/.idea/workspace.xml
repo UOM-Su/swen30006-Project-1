@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a05a0417-a8cb-4879-bea5-a3dd601bc773" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Automail.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Automail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool$Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool$ItemComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Robot$RobotState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Robot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/exceptions/ExcessiveDeliveryException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/exceptions/ItemTooHeavyException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/exceptions/MailAlreadyDeliveredException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Building.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Clock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/IMailDelivery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/MailGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Simulation$ReportDelivery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Simulation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Static-design-model.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Static-design-model.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,21 +59,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1618120385366">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="308" key="GridCell.Tab.0.bottom" timestamp="1618125964927">
+      <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1618120385366" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1618120385365">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="308" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1618125952707" />
+    <state width="1750" height="308" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1618125964927" />
+    <state width="1750" height="308" key="GridCell.Tab.0.center" timestamp="1618125964926">
+      <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1618120385365" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1618120385364">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="308" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1618125952705" />
+    <state width="1750" height="308" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1618125964926" />
+    <state width="1750" height="308" key="GridCell.Tab.0.left" timestamp="1618125964926">
+      <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1618120385364" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1618120385365">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1750" height="308" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1618125952704" />
+    <state width="1750" height="308" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1618125964926" />
+    <state width="1750" height="308" key="GridCell.Tab.0.right" timestamp="1618125964926">
+      <screen x="0" y="25" width="1792" height="1095" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1618120385365" />
+    <state width="1750" height="308" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1618125952706" />
+    <state width="1750" height="308" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1618125964926" />
   </component>
 </project>
