@@ -4,7 +4,6 @@ import exceptions.ExcessiveDeliveryException;
 import exceptions.ItemTooHeavyException;
 import exceptions.MailAlreadyDeliveredException;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,22 +19,30 @@ import automail.MailPool;
  * This class simulates the behaviour of AutoMail
  */
 public class Simulation {
-	private static int NUM_ROBOTS;
-	private static double CHARGE_THRESHOLD;
-	private static boolean CHARGE_DISPLAY;
+	public static int NUM_ROBOTS;
+	public static double CHARGE_THRESHOLD;
+	public static boolean CHARGE_DISPLAY;
 	
     /** Constant for the mail generator */
-    private static int MAIL_TO_CREATE;
-    private static int MAIL_MAX_WEIGHT;
+    public static int MAIL_TO_CREATE;
+    public static int MAIL_MAX_WEIGHT;
     
     private static ArrayList<MailItem> MAIL_DELIVERED;
     private static double total_delay = 0;
-    private static WifiModem wModem = null;
 
-    public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, IOException {
+    public static StatisticsRecorder statisticsRecorder = new StatisticsRecorder();
+
+	private static WifiModem wModem = null;
+
+	public static WifiModem getwModem() {
+		return wModem;
+	}
+
+
+	public static void main(String[] args) throws Exception {
     	
     	/** Load properties for simulation based on either default or a properties file.**/
-    	Properties automailProperties = setUpProperties();
+    	Properties automailProperties = PropertiesReader.setUpProperties();
     	
     	//An array list to record mails that have been delivered
         MAIL_DELIVERED = new ArrayList<MailItem>();
@@ -95,53 +102,9 @@ public class Simulation {
             Clock.Tick();
         }
         printResults();
-        System.out.println(wModem.Turnoff());
-    }
-    
-    static private Properties setUpProperties() throws IOException {
-    	Properties automailProperties = new Properties();
-		// Default properties
-    	automailProperties.setProperty("Robots", "Standard");
-    	automailProperties.setProperty("Floors", "10");
-    	automailProperties.setProperty("Mail_to_Create", "80");
-    	automailProperties.setProperty("ChargeThreshold", "0");
-    	automailProperties.setProperty("ChargeDisplay", "false");
-    	
-    	// Read properties
-		FileReader inStream = null;
-		try {
-			inStream = new FileReader("automail.properties");
-			automailProperties.load(inStream);
-		} finally {
-			 if (inStream != null) {
-	                inStream.close();
-	            }
-		}
-		
-		// Floors
-		Building.FLOORS = Integer.parseInt(automailProperties.getProperty("Floors"));
-        System.out.println("#Floors: " + Building.FLOORS);
-		// Mail_to_Create
-		MAIL_TO_CREATE = Integer.parseInt(automailProperties.getProperty("Mail_to_Create"));
-        System.out.println("#Created mails: " + MAIL_TO_CREATE);
-        // Mail_to_Create
-     	MAIL_MAX_WEIGHT = Integer.parseInt(automailProperties.getProperty("Mail_Max_Weight"));
-        System.out.println("#Maximum weight: " + MAIL_MAX_WEIGHT);
-		// Last_Delivery_Time
-		Clock.MAIL_RECEVING_LENGTH = Integer.parseInt(automailProperties.getProperty("Mail_Receving_Length"));
-        System.out.println("#Mail receiving length: " + Clock.MAIL_RECEVING_LENGTH);
-		// Robots
-		NUM_ROBOTS = Integer.parseInt(automailProperties.getProperty("Robots"));
-		System.out.print("#Robots: "); System.out.println(NUM_ROBOTS);
-		assert(NUM_ROBOTS > 0);
-		// Charge Threshold 
-		CHARGE_THRESHOLD = Double.parseDouble(automailProperties.getProperty("ChargeThreshold"));
-		System.out.println("#Charge Threshold: " + CHARGE_THRESHOLD);
-		// Charge Display
-		CHARGE_DISPLAY = Boolean.parseBoolean(automailProperties.getProperty("ChargeDisplay"));
-		System.out.println("#Charge Display: " + CHARGE_DISPLAY);
-		
-		return automailProperties;
+        statisticsRecorder.getStatsFromRobot(automail.robots, mailPool.getCharger());
+        System.out.println(statisticsRecorder.toString());
+        // System.out.println(wModem.Turnoff());
     }
     
     static class ReportDelivery implements IMailDelivery {
@@ -150,7 +113,11 @@ public class Simulation {
     	public void deliver(MailItem deliveryItem){
     		if(!MAIL_DELIVERED.contains(deliveryItem)){
     			MAIL_DELIVERED.add(deliveryItem);
-                System.out.printf("T: %3d > Delivered(%4d) [%s]%n", Clock.Time(), MAIL_DELIVERED.size(), deliveryItem.toString());
+                if (CHARGE_DISPLAY) {
+					System.out.printf("T: %3d > Delivered(%4d) [%s]%n", Clock.Time(), MAIL_DELIVERED.size(), deliveryItem.displayCharge());
+				} else {
+					System.out.printf("T: %3d > Delivered(%4d) [%s]%n", Clock.Time(), MAIL_DELIVERED.size(), deliveryItem.toString());
+				}
     			// Calculate delivery score
     			total_delay += calculateDeliveryDelay(deliveryItem);
     		}

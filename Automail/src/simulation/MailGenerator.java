@@ -10,8 +10,8 @@ import automail.MailPool;
  */
 public class MailGenerator {
 
-    public final int MAIL_TO_CREATE;
     public final int MAIL_MAX_WEIGHT;
+    public final int MAIL_TO_CREATE;
     
     private int mailCreated;
 
@@ -22,6 +22,7 @@ public class MailGenerator {
     private MailPool mailPool;
 
     private Map<Integer,ArrayList<MailItem>> allMail;
+    private MailFactory mailFactory;
 
     /**
      * Constructor for mail generation
@@ -40,6 +41,7 @@ public class MailGenerator {
         // Vary arriving mail by +/-20%
         MAIL_TO_CREATE = mailToCreate*4/5 + random.nextInt(mailToCreate*2/5);
         MAIL_MAX_WEIGHT = mailMaxWeight;
+        mailFactory = new MailFactory(MAIL_MAX_WEIGHT, random);
         // System.out.println("Num Mail Items: "+MAIL_TO_CREATE);
         mailCreated = 0;
         complete = false;
@@ -48,51 +50,12 @@ public class MailGenerator {
     }
 
     /**
-     * @return a new mail item that needs to be delivered
-     */
-    private MailItem generateMail(){
-    	MailItem newMailItem;
-        int destinationFloor = generateDestinationFloor();
-        int arrivalTime = generateArrivalTime();
-        int weight = generateWeight();
-        
-        newMailItem = new MailItem(destinationFloor,arrivalTime,weight);
-        return newMailItem;
-    }
-
-    /**
-     * @return a destination floor between the ranges of GROUND_FLOOR to FLOOR
-     */
-    private int generateDestinationFloor(){
-        return Building.LOWEST_FLOOR + random.nextInt(Building.FLOORS);
-    }
-
-    /**
-     * @return a random weight
-     */
-    private int generateWeight(){
-    	final double mean = 200.0; // grams for normal item
-    	final double stddev = 1000.0; // grams
-    	double base = random.nextGaussian();
-    	if (base < 0) base = -base;
-    	int weight = (int) (mean + base * stddev);
-        return weight > MAIL_MAX_WEIGHT ? MAIL_MAX_WEIGHT : weight;
-    }
-    
-    /**
-     * @return a random arrival time before the last delivery time
-     */
-    private int generateArrivalTime(){
-        return 1 + random.nextInt(Clock.MAIL_RECEVING_LENGTH);
-    }
-
-    /**
      * This class initializes all mails and sets their corresponding values,
      * All generated mails will be saved in allMail
      */
     public void generateAllMail(){
         while(!complete){
-            MailItem newMail =  generateMail();
+            MailItem newMail = mailFactory.generateMail();
             int timeToDeliver = newMail.getArrivalTime();
             /** Check if key exists for this time **/
             if(allMail.containsKey(timeToDeliver)){
@@ -131,5 +94,5 @@ public class MailGenerator {
             }
         }
     }
-    
+
 }
