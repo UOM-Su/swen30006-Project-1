@@ -3,30 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a05a0417-a8cb-4879-bea5-a3dd601bc773" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/automail.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Automail.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/Automail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool$Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailPool$Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool$ItemComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailPool$ItemComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Robot$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Robot$RobotState.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/Robot$RobotState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/Robot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/exceptions/ExcessiveDeliveryException.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/exceptions/ExcessiveDeliveryException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/exceptions/ItemTooHeavyException.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/exceptions/ItemTooHeavyException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/exceptions/MailAlreadyDeliveredException.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/exceptions/MailAlreadyDeliveredException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Building.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/Building.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Clock.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/Clock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/IMailDelivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/IMailDelivery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/MailGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/MailGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Simulation$ReportDelivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/Simulation$ReportDelivery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/Simulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/Automail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/Automail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/MailItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/MailItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/MailPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/MailPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/MailGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/MailGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Simulation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +33,17 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Simulation" type="Application" factoryName="Application" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
       <output_file path="$PROJECT_DIR$/.." is_save="true" />
       <option name="MAIN_CLASS_NAME" value="simulation.Simulation" />
@@ -67,17 +54,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
