@@ -20,10 +20,10 @@ public class MailPool {
 	private class Item {
 		int destination;
 		boolean priority;
-		MailItem mailItem;
+		NormalMailItem mailItem;
 		// Use stable sort to keep arrival time relative positions
 		
-		public Item(MailItem mailItem) {
+		public Item(NormalMailItem mailItem) {
 			destination = mailItem.getDestFloor();
 			priority = false;
 			this.mailItem = mailItem;
@@ -71,7 +71,7 @@ public class MailPool {
      * Adds an item to the mail pool
      * @param mailItem the mail item being added.
      */
-	public void addToPool(MailItem mailItem) {
+	public void addToPool(NormalMailItem mailItem) {
 		Item item = new Item(mailItem);
 		pool.add(item);
 

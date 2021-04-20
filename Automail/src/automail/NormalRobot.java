@@ -13,8 +13,8 @@ public class NormalRobot extends Robot {
 	
     static public final int INDIVIDUAL_MAX_WEIGHT = 2000;
     
-    private MailItem deliveryItem = null;
-    private MailItem tube = null;
+    private NormalMailItem deliveryItem = null;
+    private NormalMailItem tube = null;
 
     /**
      * Initiates the robot's location at the start to be at the mailroom
@@ -150,7 +150,7 @@ public class NormalRobot extends Robot {
      * @throws ItemTooHeavyException an exception of exceeding the limits of number of items
      */
     @Override
-	public void addToHand(MailItem mailItem) throws ItemTooHeavyException {
+	public void addToHand(NormalMailItem mailItem) throws ItemTooHeavyException {
 		assert(deliveryItem == null);
 		deliveryItem = mailItem;
 		if (deliveryItem.weight > INDIVIDUAL_MAX_WEIGHT) throw new ItemTooHeavyException();
@@ -162,7 +162,7 @@ public class NormalRobot extends Robot {
      * @throws ItemTooHeavyException an exception of exceeding the limits of number of items
      */
     @Override
-	public void addToTube(MailItem mailItem) throws ItemTooHeavyException {
+	public void addToTube(NormalMailItem mailItem) throws ItemTooHeavyException {
 		assert(tube == null);
 		tube = mailItem;
 		if (tube.weight > INDIVIDUAL_MAX_WEIGHT) throw new ItemTooHeavyException();
@@ -182,7 +182,7 @@ public class NormalRobot extends Robot {
      * @param mailItem the item needed to be add
      */
     @Override
-    public void load(MailItem mailItem) {
+    public void load(NormalMailItem mailItem) {
         try {
             if (this.deliveryItem == null) {
                 addToHand(mailItem);

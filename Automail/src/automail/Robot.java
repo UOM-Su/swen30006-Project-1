@@ -45,14 +45,14 @@ public abstract class Robot {
 
     public abstract void changeState(RobotState nextState);
 
-    public abstract void addToHand(MailItem mailItem) throws ItemTooHeavyException;
-    public abstract void addToTube(MailItem mailItem) throws ItemTooHeavyException;
+    public abstract void addToHand(NormalMailItem mailItem) throws ItemTooHeavyException;
+    public abstract void addToTube(NormalMailItem mailItem) throws ItemTooHeavyException;
 
     public abstract boolean isEmpty();
 
     public abstract boolean spaceForItem();
 
-    public abstract void load(MailItem mailItem);
+    public abstract void load(NormalMailItem mailItem);
 
     public Charger getCharger() {
         return charger;

@@ -1,6 +1,6 @@
 package simulation;
 
-import automail.MailItem;
+import automail.NormalMailItem;
 
 import java.util.Random;
 
@@ -23,13 +23,13 @@ public class MailFactory {
     /**
      * @return a new mail item that needs to be delivered
      */
-    public MailItem generateMail(){
-        MailItem newMailItem;
+    public NormalMailItem generateMail(){
+        NormalMailItem newMailItem;
         int destinationFloor = generateDestinationFloor();
         int arrivalTime = generateArrivalTime();
         int weight = generateWeight();
 
-        newMailItem = new MailItem(destinationFloor,arrivalTime,weight);
+        newMailItem = new NormalMailItem(destinationFloor,arrivalTime,weight);
         return newMailItem;
     }
 

@@ -2,7 +2,7 @@ package simulation;
 
 import java.util.*;
 
-import automail.MailItem;
+import automail.NormalMailItem;
 import automail.MailPool;
 
 /**
@@ -21,7 +21,7 @@ public class MailGenerator {
     private boolean complete;
     private MailPool mailPool;
 
-    private Map<Integer,ArrayList<MailItem>> allMail;
+    private Map<Integer,ArrayList<NormalMailItem>> allMail;
     private MailFactory mailFactory;
 
     /**
@@ -45,7 +45,7 @@ public class MailGenerator {
         // System.out.println("Num Mail Items: "+MAIL_TO_CREATE);
         mailCreated = 0;
         complete = false;
-        allMail = new HashMap<Integer,ArrayList<MailItem>>();
+        allMail = new HashMap<Integer,ArrayList<NormalMailItem>>();
         this.mailPool = mailPool;
     }
 
@@ -55,7 +55,7 @@ public class MailGenerator {
      */
     public void generateAllMail(){
         while(!complete){
-            MailItem newMail = mailFactory.generateMail();
+            NormalMailItem newMail = mailFactory.generateMail();
             int timeToDeliver = newMail.getArrivalTime();
             /** Check if key exists for this time **/
             if(allMail.containsKey(timeToDeliver)){
@@ -66,7 +66,7 @@ public class MailGenerator {
                 /** If the key doesn't exist then set a new key along with the array of MailItems to add during
                  * that time step.
                  */
-                ArrayList<MailItem> newMailList = new ArrayList<MailItem>();
+                ArrayList<NormalMailItem> newMailList = new ArrayList<NormalMailItem>();
                 newMailList.add(newMail);
                 allMail.put(timeToDeliver,newMailList);
             }
@@ -88,7 +88,7 @@ public class MailGenerator {
     public void addToMailPool(){
     	// Check if there are any mail to create
         if(this.allMail.containsKey(Clock.Time())){
-            for(MailItem mailItem : allMail.get(Clock.Time())){
+            for(NormalMailItem mailItem : allMail.get(Clock.Time())){
                 System.out.printf("T: %3d > new addToPool [%s]%n", Clock.Time(), mailItem.toString());
                 mailPool.addToPool(mailItem);
             }

@@ -1,9 +1,5 @@
 package automail;
 
-import simulation.FeeFinder;
-
-import java.util.HashMap;
-
 public class Charger {
     // record the unit of activities in lookup and movement
     public static final double REMOTE_LOOKUP_UNIT = 0.1;
@@ -55,7 +51,7 @@ public class Charger {
      * @param mailItem an item which is about to be delivered
      * @return the estimate charge for this item in order to sort
      */
-    public double estimateChargeBeforeDelivery(MailItem mailItem) {
+    public double estimateChargeBeforeDelivery(NormalMailItem mailItem) {
         double estimateCharge = 0;
         double activityUnits = ((mailItem.getDestFloor()-1) * ROBOT_MOVEMENT_UNIT) + REMOTE_LOOKUP_UNIT;
 
@@ -71,7 +67,7 @@ public class Charger {
      * @param mailItem the item be delivered
      * @return the charge of the money the tenant needs to pay
      */
-    public double getFinalCharge(MailItem mailItem) {
+    public double getFinalCharge(NormalMailItem mailItem) {
         cost = fee + activityCost.getActivity() * ACTIVITY_UNIT_PRICE;
         charge = cost * (1 + MARKUP_PERCENTAGE);
         mailItem.setFee(fee);

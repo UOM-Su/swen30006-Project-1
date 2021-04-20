@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a05a0417-a8cb-4879-bea5-a3dd601bc773" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/automail/NormalMailItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/automail.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/automail/Charger.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/Charger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/automail/MailItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool$Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailPool$Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/automail/NormalRobot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/NormalRobot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/automail/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/Robot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simulation/IMailDelivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/IMailDelivery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simulation/MailFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/MailFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simulation/MailGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/MailGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simulation/Simulation$ReportDelivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/Simulation$ReportDelivery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/simulation/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/Simulation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automail/Charger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/Charger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automail/MailItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/MailItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automail/MailPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/MailPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automail/NormalRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/NormalRobot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/automail/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/ItemTooHeavyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ItemTooHeavyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/IMailDelivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/IMailDelivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/MailFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/MailFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/MailGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/MailGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Simulation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,21 +71,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Automail-w" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Simulation" type="Application" factoryName="Application" nameIsGenerated="true" show_console_on_std_err="true" show_console_on_std_out="true">
       <output_file path="$PROJECT_DIR$/.." is_save="true" />
       <option name="MAIN_CLASS_NAME" value="simulation.Simulation" />
@@ -59,6 +93,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -69,8 +104,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618120341725</updated>
+      <workItem from="1618817132144" duration="2374000" />
+      <workItem from="1618830077933" duration="2018000" />
+      <workItem from="1618838106293" duration="299000" />
+      <workItem from="1618840340313" duration="162000" />
+      <workItem from="1618883694590" duration="1008000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618581309409">
@@ -85,26 +140,42 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="633" y="354" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1618580965722" />
-    <state width="1750" height="392" key="GridCell.Tab.0.bottom" timestamp="1618734820093">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="193" y="15" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618833722077">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="193" y="15" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1618833722077" />
+    <state x="497" y="109" key="FileChooserDialogImpl" timestamp="1618830466735">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="497" y="109" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618830466735" />
+    <state width="1481" height="312" key="GridCell.Tab.0.bottom" timestamp="1618840500566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1481" height="312" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618840500566" />
     <state width="1750" height="392" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1618734820093" />
     <state width="1750" height="794" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1618717514336" />
-    <state width="1750" height="392" key="GridCell.Tab.0.center" timestamp="1618734820092">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1481" height="358" key="GridCell.Tab.0.bottom/1920.0.1536.844/0.0.1536.824@1920.0.1536.844" timestamp="1618820097337" />
+    <state width="1481" height="312" key="GridCell.Tab.0.center" timestamp="1618840500565">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1481" height="312" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618840500565" />
     <state width="1750" height="392" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1618734820092" />
     <state width="1750" height="794" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1618717514336" />
-    <state width="1750" height="392" key="GridCell.Tab.0.left" timestamp="1618734820092">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1481" height="358" key="GridCell.Tab.0.center/1920.0.1536.844/0.0.1536.824@1920.0.1536.844" timestamp="1618820097337" />
+    <state width="1481" height="312" key="GridCell.Tab.0.left" timestamp="1618840500565">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1481" height="312" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618840500565" />
     <state width="1750" height="392" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1618734820092" />
     <state width="1750" height="794" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1618717514335" />
-    <state width="1750" height="392" key="GridCell.Tab.0.right" timestamp="1618734820093">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state width="1481" height="358" key="GridCell.Tab.0.left/1920.0.1536.844/0.0.1536.824@1920.0.1536.844" timestamp="1618820097337" />
+    <state width="1481" height="312" key="GridCell.Tab.0.right" timestamp="1618840500566">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1481" height="312" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618840500566" />
     <state width="1750" height="392" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1618734820093" />
     <state width="1750" height="794" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1618717514336" />
+    <state width="1481" height="358" key="GridCell.Tab.0.right/1920.0.1536.844/0.0.1536.824@1920.0.1536.844" timestamp="1618820097337" />
     <state width="1750" height="392" key="GridCell.Tab.1.bottom" timestamp="1618734820095">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -121,6 +192,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1750" height="392" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1618734820094" />
+    <state x="2466" y="308" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618817413229">
+      <screen x="1920" y="0" width="1536" height="844" />
+    </state>
+    <state x="2466" y="308" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1536.844/0.0.1536.824@1920.0.1536.844" timestamp="1618817413229" />
     <state x="302" y="179" key="new project wizard" timestamp="1618644282921">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

@@ -1,10 +1,10 @@
 package simulation;
 
+import automail.NormalMailItem;
 import exceptions.ExcessiveDeliveryException;
 import exceptions.ItemTooHeavyException;
 import exceptions.MailAlreadyDeliveredException;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
@@ -12,7 +12,6 @@ import java.util.Properties;
 import com.unimelb.swen30006.wifimodem.WifiModem;
 
 import automail.Automail;
-import automail.MailItem;
 import automail.MailPool;
 
 /**
@@ -27,7 +26,7 @@ public class Simulation {
     public static int MAIL_TO_CREATE;
     public static int MAIL_MAX_WEIGHT;
     
-    private static ArrayList<MailItem> MAIL_DELIVERED;
+    private static ArrayList<NormalMailItem> MAIL_DELIVERED;
     private static double total_delay = 0;
 
     public static StatisticsRecorder statisticsRecorder = new StatisticsRecorder();
@@ -45,7 +44,7 @@ public class Simulation {
     	Properties automailProperties = PropertiesReader.setUpProperties();
     	
     	//An array list to record mails that have been delivered
-        MAIL_DELIVERED = new ArrayList<MailItem>();
+        MAIL_DELIVERED = new ArrayList<NormalMailItem>();
                 
         /** This code section below is to save a random seed for generating mails.
          * If a program argument is entered, the first argument will be a random seed.
@@ -110,7 +109,7 @@ public class Simulation {
     static class ReportDelivery implements IMailDelivery {
     	
     	/** Confirm the delivery and calculate the total score */
-    	public void deliver(MailItem deliveryItem){
+    	public void deliver(NormalMailItem deliveryItem){
     		if(!MAIL_DELIVERED.contains(deliveryItem)){
     			MAIL_DELIVERED.add(deliveryItem);
                 if (CHARGE_DISPLAY) {
@@ -132,7 +131,7 @@ public class Simulation {
 
     }
     
-    private static double calculateDeliveryDelay(MailItem deliveryItem) {
+    private static double calculateDeliveryDelay(NormalMailItem deliveryItem) {
     	// Penalty for longer delivery times
     	final double penalty = 1.2;
     	double priority_weight = 0;
