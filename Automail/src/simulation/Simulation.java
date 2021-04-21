@@ -101,9 +101,11 @@ public class Simulation {
             Clock.Tick();
         }
         printResults();
-        statisticsRecorder.getStatsFromRobot(automail.robots, mailPool.getCharger());
-        System.out.println(statisticsRecorder.toString());
-        // System.out.println(wModem.Turnoff());
+		if (CHARGE_DISPLAY) {
+			// Pass all the delivered mailitem to the stats class for statistics
+			statisticsRecorder.getStatsFromRobot(automail.robots, mailPool.getCharger());
+			System.out.println(statisticsRecorder.toString());
+		}
     }
     
     static class ReportDelivery implements IMailDelivery {

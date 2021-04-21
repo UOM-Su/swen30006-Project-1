@@ -20,31 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a05a0417-a8cb-4879-bea5-a3dd601bc773" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/automail/NormalMailItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/automail.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Charger.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/Charger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool$Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailPool$Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/MailPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/MailPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/NormalRobot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/NormalRobot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/automail/Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/automail/Robot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/IMailDelivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/IMailDelivery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/MailFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/MailFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/MailGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/MailGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Simulation$ReportDelivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/Simulation$ReportDelivery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/simulation/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/simulation/Simulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/Charger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/Charger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/MailItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/MailItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/MailPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/MailPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/NormalRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/NormalRobot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/automail/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/automail/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/ItemTooHeavyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/ItemTooHeavyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/IMailDelivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/IMailDelivery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/MailFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/MailFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/MailGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/MailGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/simulation/Simulation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Automail-w" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunManager">
